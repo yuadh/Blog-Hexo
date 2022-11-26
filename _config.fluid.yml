@@ -27,3 +27,10 @@ navbar:
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+
+post:
+  comments:
+    enable: true
+    type: disqus
+Valine:
+  shortname: fluid

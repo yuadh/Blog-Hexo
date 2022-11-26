@@ -4,17 +4,17 @@
 
 # Site
 title: 个人博客
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+subtitle: MyBlog
+description: yuadh's Blog
+keywords: Blog,yuadh,
+author: yuadh
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://www.yuadh.com
+permalink: :category/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -66,7 +66,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: blog
 category_map:
 tag_map:
 
