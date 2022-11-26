@@ -13,24 +13,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
-  <meta name="keywords" content="">
+  <meta name="author" content="yuadh">
+  <meta name="keywords" content="Blog,yuadh,">
   
-    <meta name="description" content="测试测试测试测试测试">
+    <meta name="description" content="this指向123456789101112var length &#x3D; 10;var obj &#x3D; &amp;#123;    length:20,    sayHi()&amp;#123;        console.log(this.length)    &amp;#125;&amp;#125;obj.sayHi()const fn &#x3D; obj.sayHi()fn()var arr &#x3D; [obj.sayHi,1,2]arr[0]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="helloWorld">
-<meta property="og:url" content="http://example.com/2022/11/25/helloWorld/index.html">
+<meta property="og:title" content="03-React的this指向">
+<meta property="og:url" content="https://www.yuadh.com/React/03.this%E6%8C%87%E5%90%91/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="测试测试测试测试测试">
+<meta property="og:description" content="this指向123456789101112var length &#x3D; 10;var obj &#x3D; &amp;#123;    length:20,    sayHi()&amp;#123;        console.log(this.length)    &amp;#125;&amp;#125;obj.sayHi()const fn &#x3D; obj.sayHi()fn()var arr &#x3D; [obj.sayHi,1,2]arr[0]">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-25T13:59:30.000Z">
-<meta property="article:modified_time" content="2022-11-25T14:00:40.377Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:published_time" content="2022-06-23T00:55:10.000Z">
+<meta property="article:modified_time" content="2022-11-26T03:19:20.969Z">
+<meta property="article:author" content="yuadh">
+<meta property="article:tag" content="React">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>helloWorld - 个人博客</title>
+  <title>03-React的this指向 - 个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -68,7 +69,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.yuadh.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -207,7 +208,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="helloWorld"></span>
+            <span id="subtitle" data-typed-text="03-React的this指向"></span>
           
         </div>
 
@@ -218,8 +219,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-11-25 21:59" pubdate>
-          2022年11月25日 晚上
+        <time datetime="2022-06-23 08:55" pubdate>
+          2022年6月23日 早上
         </time>
       </span>
     
@@ -230,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          10 字
+          1.9k 字
         
       </span>
     
@@ -241,7 +242,7 @@
         
         
         
-          1 分钟
+          16 分钟
         
       </span>
     
@@ -279,12 +280,63 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">helloWorld</h1>
+            <h1 style="display: none">03-React的this指向</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>测试测试测试测试</p>
+                <h2 id="this指向"><a href="#this指向" class="headerlink" title="this指向"></a>this指向</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">var</span> length = <span class="hljs-number">10</span>;<br><span class="hljs-keyword">var</span> obj = &#123;<br>    <span class="hljs-attr">length</span>:<span class="hljs-number">20</span>,<br>    <span class="hljs-title function_">sayHi</span>(<span class="hljs-params"></span>)&#123;<br>        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">length</span>)<br>    &#125;<br>&#125;<br>obj.<span class="hljs-title function_">sayHi</span>()<br><span class="hljs-keyword">const</span> fn = obj.<span class="hljs-title function_">sayHi</span>()<br><span class="hljs-title function_">fn</span>()<br><span class="hljs-keyword">var</span> arr = [obj.<span class="hljs-property">sayHi</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>]<br>arr[<span class="hljs-number">0</span>]()<br></code></pre></td></tr></table></figure>
+
+<p>打印得结果为 </p>
+<ul>
+<li>20	this指向的是obj，因为调用者是obj</li>
+<li>10    this指向的是window，因为调用者是window</li>
+<li>3      this指向的是arr，因为调用者是arr</li>
+</ul>
+<h2 id="react中的this指向"><a href="#react中的this指向" class="headerlink" title="react中的this指向"></a>react中的this指向</h2><p>在类组件中 <code>render</code> 的 <code>this</code> 指向当前组件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs react">render() &#123;<br>  const onClick = this.handleClick<br>  onClick()<br>  return (<br>    &lt;div&gt;<br>      &lt;h1&gt;XXX&lt;/h1&gt;<br>      &lt;div&gt;&#123;this.state.msg&#125;&lt;/div&gt;<br>      &lt;div&gt;&#123;this.state.count&#125;&lt;/div&gt;<br>      &lt;button onClick=&#123;this.handleClick&#125;&gt;点击事件&lt;/button&gt;<br>    &lt;/div&gt;<br>  )<br>&#125;<br>handleClick() &#123;<br>  console.log(&#x27;233&#x27; + this)<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>函数调用中的 this 因为没有定义所以是 <code>undefined</code> , 不知道谁是调用者</p>
+<p><strong>解决方案1</strong></p>
+<p>把函数调用包裹在箭头函数中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs react">const onClick = () =&gt; this.handleClick()<br>onClick()<br></code></pre></td></tr></table></figure>
+
+<p><strong>解决方案2</strong></p>
+<p>绑定 <code>this</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs react">const onClick = this.handleClick.bind(this)<br>onClick()<br></code></pre></td></tr></table></figure>
+
+<p><strong>解决方案3</strong></p>
+<p>class新语法：类实例语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs react">handleClick = ()=&gt;&#123;<br>    console.log(this)<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>此处是把函数写在了实例上，需要配合插件。。直接使用 <code>js</code> 可能无效</p>
+<h2 id="react修改状态"><a href="#react修改状态" class="headerlink" title="react修改状态"></a>react修改状态</h2><ul>
+<li>组件中的状态是可变的</li>
+<li>语法 <code>this.setState(&#123;&#125;)</code> ，这个方法可以修改state同时可以更新UI</li>
+<li>不要直接修改 <code>state</code> 中的值</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs react">render() &#123;<br>   return (<br>     &lt;div&gt;<br>       &lt;h1&gt;XXX&lt;/h1&gt;<br>       &lt;div&gt;&#123;this.state.msg&#125;&lt;/div&gt;<br>       &lt;div&gt;&#123;this.state.count&#125;&lt;/div&gt;<br>       &lt;button onClick=&#123;this.handleClick&#125;&gt;点击事件&lt;/button&gt;<br>     &lt;/div&gt;<br>   )<br> &#125;<br> handleClick = () =&gt; &#123;<br>   this.setState(&#123;<br>     count: this.state.count + 1,<br>   &#125;)<br> &#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="和vue数据更新的区别"><a href="#和vue数据更新的区别" class="headerlink" title="和vue数据更新的区别"></a>和vue数据更新的区别</h2><p><strong>vue：</strong> vue2会通过 es5 的语法 <code>Object.defineProperty()</code> vue3 会通过 <code>es6</code> 的 <code>proxy</code> 语法 检测到数据的变化，当数据变化的时候，vue 会帮助我们自动更新 DOM </p>
+<p><strong>react：</strong> react并不会去监听数据的变化，所以直接修改数据，react中的 DOM 不会自动更新，但是 react 提供了一个方法 <code>setState()</code> ，它可以做  1.修改 <code>state</code> 的值 2.更新 DOM</p>
+<h2 id="react核心理念"><a href="#react核心理念" class="headerlink" title="react核心理念"></a>react核心理念</h2><p><strong>状态不变</strong></p>
+<ul>
+<li>不能直接修改 <code>react</code> 中的 <code>state</code> 的值，而是提供新的值覆盖</li>
+<li>直接修改 <code>react</code> 中的 <code>state</code> 的值，组件不会更新</li>
+</ul>
+<p>同样的在修改对象类型的数据时，也是采用相同的方法覆盖其需要修改的值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs react">clickFn = ()=&gt;&#123;<br>    this.setState(&#123;<br>        count:1,<br>        msg:&#x27;world&#x27;,<br>        user:&#123;<br>            ...this.state.user,<br>            name:&#x27;ls&#x27;<br>        &#125;,<br>        list:this.state.list.fitter(item=&gt;item!==&#x27;ls&#x27;)<br>    &#125;)<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
 
                 
               </div>
@@ -293,6 +345,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/React/" class="category-chain-item">React</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/React/">#React</a>
+      
+    </div>
   
 </div>
 
@@ -302,20 +382,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>helloWorld</div>
-      <div>http://example.com/2022/11/25/helloWorld/</div>
+      <div>03-React的this指向</div>
+      <div>https://www.yuadh.com/React/03.this指向/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>John Doe</div>
+          <div>yuadh</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年11月25日</div>
+          <div>2022年6月23日</div>
         </div>
       
       
@@ -347,9 +427,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/11/26/test/" title="test">
+                      <a href="/React/02.%E7%BB%84%E4%BB%B6/" title="02-React组件">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">test</span>
+                        <span class="hidden-mobile">02-React组件</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -357,8 +437,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/24/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/React/05.%E7%BB%84%E4%BB%B6%E9%80%9A%E4%BF%A1/" title="05-React的组件通信">
+                        <span class="hidden-mobile">05-React的组件通信</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
